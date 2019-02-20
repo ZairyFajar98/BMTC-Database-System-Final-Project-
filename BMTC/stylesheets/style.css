@@ -1,0 +1,241 @@
+body{
+    font: 15px/1.5 "Trebuchet MS", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* global use */
+header{
+    background:linear-gradient(to right, #673A82, #1E0549);
+}
+
+.container{
+    width:80%;
+    margin: auto;
+    color: #1E0549;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #1E0549;
+}
+
+table{
+    width: 100%;
+    background-color: #fcfcfc;
+    margin:auto;
+}
+.table{
+    padding: 1px;
+    text-align: center;
+}
+
+td{
+    width: 20%;
+}
+
+table tr{
+    
+}
+
+.table-title{
+    font-size: 20px;
+}
+
+.tambah-baris{
+    width: 20%;
+    padding: 0 0 10px 0;
+    border-bottom: #673A82 2px solid;
+    text-align: center;
+    position: relative;
+    right: -80%;
+    margin-bottom: 10px;
+}
+    .tambah-baris button{
+        display: inline;
+    }
+    .tambah-baris p{
+        margin:auto;
+        display: inline;
+        padding-left: 10px;
+    }
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2em;
+}
+
+.info{
+    padding:20px;
+    border: #dddddd 2px solid;
+    border-radius: 25px;
+}
+    .info div{
+        width: 100%;
+    }
+    .info p{
+        font-size: 12px;
+        margin:0px;
+        padding:0px;
+    }
+    .info .info-button{
+        text-align: right;
+    }
+    .info #error-msg{
+        font-size: 12px;
+        color: red;
+    }
+    .info #success-msg{
+        font-size: 12px;
+        color: green;
+    }
+
+/* transaction index.php */
+#transaction{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#transaction div{
+    text-align: center;
+    border-radius: 10px;
+}
+
+#transaction div p{
+    padding: 2px;
+    margin: 2px;
+}
+
+.active{
+    background: linear-gradient(to bottom, #ffffff, #C7BCDA);
+    color: #000000; 
+}
+
+#transaction div:hover, .active{
+    border-bottom: #C7BCDA 2px solid;
+    cursor: pointer;
+}
+
+.transaction-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap: 2em;
+    padding-top: 2em;
+}
+    .transaction-wrapper div{
+        padding: 1em;
+        /* text-align: center; */
+        background: linear-gradient(to right, #dddddd, #C7BCDA); 
+        border-radius: 5px;
+        -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);     
+    }
+    .transaction-wrapper .layan{
+        background: linear-gradient(to right,#673A82, #dddddd );
+        color: white;
+    }
+    .transaction-wrapper div p{
+        margin:0px;
+        padding: 0px;
+    }
+    .transaction-wrapper div:hover{
+        opacity: 0.9;
+        cursor: pointer;
+        box-shadow: 0px 8px 8px 0px rgba(5,212,250,0.3);
+    }  
+
+.detail-action{
+    width: 100%;
+    margin-top: 10%;
+}
+    .detail-action div{
+        background: linear-gradient(to right, #dddddd, #C7BCDA); 
+        width: 50%;
+        margin-top: 2em;
+        margin-left: 50%;
+        padding: 1em 0 0 0;
+        text-align: center;
+        height: 50px;
+        -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);  
+    }
+    .detail-action div:hover{
+        border-radius: 10px;
+        transform: scale(1.1,1.1);
+    }
+
+.tambah-transaksi{
+    width:60%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    grid-gap: 2em;
+}
+    .tambah-transaksi div{
+        height: 100%;
+        text-align: center;
+        padding: 50px 0 0 0;
+        border-radius: 100px;
+        -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);  
+    }
+    .tambah-transaksi .layan{
+        background: linear-gradient(to right,#673A82, #dddddd );
+        color: white;
+    }
+    .tambah-transaksi .beli{
+        background: linear-gradient(to right, #dddddd, #C7BCDA);
+    }
+    .tambah-transaksi .layan:hover{
+        opacity: 0.9;
+        transform: rotate(10deg);
+    }
+    .tambah-transaksi .beli:hover{
+        opacity: 0.9;
+        transform: rotate(-10deg);
+    }
+
+.profil-form{
+    width: 40%;
+    margin: auto;
+    background: linear-gradient(to bottom, #C7BCDA, #ffffff);
+    border-radius: 10px;
+    padding:2em;
+}
+
+.profil-form {
+    text-align: center;
+}
+.profil-form p{
+    margin:0px;
+    padding:0px;
+}
+.profil-form #motor {
+    border-bottom: #000000 2px solid;
+    margin-bottom: 10px;
+}
+.profil-form #pelanggan{
+    margin-bottom: 50px;
+}
+.profil-form #motor div{
+    text-align: left;
+    width: 100%;
+}
+.profil-form #pelanggan div{
+    text-align: left;
+    width: 100%;
+}
+.profil-form #pelanggan input::text{
+    width: 100%;
+}
